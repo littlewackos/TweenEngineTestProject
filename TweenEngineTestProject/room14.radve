@@ -1,0 +1,31 @@
+title "room9";
+
+definition start;
+	background "background1" | "data/rooms/ud13.jpg"; 
+	portal "portalBottom" | "data/bn_down_pressed.png" | "data/bn_down.png" | "scripts/room13.radve";
+	portal "portalUp" | "data/bn_up_pressed.png" | "data/bn_up.png" | "scripts/room15.radve";
+	#portal "portalLeft" | "data/bn_left_pressed.png" | "data/bn_left.png" | "scripts/room5.radve";
+	#portal "portalRight" | "data/bn_right_pressed.png" | "data/bn_right.png" | "scripts/room13right.radve";
+definition end;
+
+sequence start;
+	#text "text1" | -150,50 | "text/room3.txt";
+sequence end;
+
+transition start;
+	#"background1" | SCROLLX,60;
+	#"background3" | SCROLLX,20;
+transition end;
+
+positions start;
+	"portalBottom" | Bottom | 100,100;
+	"portalUp" | Top | 100,100;
+	"portalLeft" | Left | 100,100;
+	"portalRight" | Right | 100,100;
+position end;
+
+
+
+
+
+
